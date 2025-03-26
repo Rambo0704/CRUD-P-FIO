@@ -1,5 +1,5 @@
 .body{
-  background-color: #FFFBF5;
+  background-color: #ff9900;
 }
 .form {
   height: 18em;
@@ -51,7 +51,7 @@
 #btn {
   font-size: x-large;
   letter-spacing: 2px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   height: 30%;
   background: linear-gradient(144deg,#af40ff,
