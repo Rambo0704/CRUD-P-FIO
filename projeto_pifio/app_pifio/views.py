@@ -9,3 +9,8 @@ def criar_pifio(request):
         novo_pifio.save()
         
     return render(request, 'usuarios/pifios.html')
+def criar_tabela(request):
+     pifios = {
+        'pifios': Pifios.objects.all()
+    }
+     return render(request, 'usuarios/tabela.html', pifios)
