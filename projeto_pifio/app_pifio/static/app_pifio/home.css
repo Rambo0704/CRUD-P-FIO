@@ -145,7 +145,7 @@ button:active {
  }
  
  .button span:after {
-  content: 'for free';
+  content: 'Cadastrados';
   position: absolute;
   opacity: 0;
   top: 0;
