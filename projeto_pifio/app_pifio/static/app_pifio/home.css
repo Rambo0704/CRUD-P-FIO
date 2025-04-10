@@ -8,10 +8,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.body {
-  background-color: #ffffff;
-}
-
 .form {
   height: 18em;
   width: 16em;
@@ -69,6 +65,7 @@ body {
   background-size: 150% 150%;
   animation: input 5s infinite;
   transition: all 900ms ease-in;
+  cursor: pointer; /* Adicionado cursor para indicar interatividade */
 }
 
 #btn:hover {
@@ -84,7 +81,7 @@ body {
 }
 
 /* Botão de estilo Uiverse.io por barisdogansutcu */
-button {
+.uiverse-button-one {
   font-family: inherit;
   border: none;
   outline: 1px dotted rgb(37, 37, 37);
@@ -96,14 +93,15 @@ button {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 5px 30px;
+  margin-top: 10px; /* Adicionado margem para separar dos outros elementos */
 }
 
-button:active {
+.uiverse-button-one:active {
   box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
 }
 
 /* Botão estilizado Uiverse.io por TCdesign-dev */
-.button {
+.uiverse-button-two {
   display: inline-block;
   border-radius: 7px;
   border: none;
@@ -117,16 +115,17 @@ button:active {
   padding: 1em;
   transition: all 0.4s;
   cursor: pointer;
+  margin-top: 10px; /* Adicionado margem para separar dos outros elementos */
 }
 
-.button span {
+.uiverse-button-two span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.4s;
 }
 
-.button span:after {
+.uiverse-button-two span:after {
   content: 'Cadastrados';
   position: absolute;
   opacity: 0;
@@ -135,11 +134,11 @@ button:active {
   transition: 0.7s;
 }
 
-.button:hover span {
+.uiverse-button-two:hover span {
   padding-right: 3.55em;
 }
 
-.button:hover span:after {
+.uiverse-button-two:hover span:after {
   opacity: 1;
   right: 0;
 }
