@@ -73,15 +73,17 @@ WSGI_APPLICATION = 'projeto_pifio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'banco_pifio',
-        'USER': 'root',
-        'PASSWORD': '0704',
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'NAME': os.getenv("banco_pifio"),
+        'USER': os.getenv("root"),
+        'PASSWORD': os.getenv("0704"),
+        'HOST': os.getenv("localhost"),
+        'PORT': os.getenv("3306"),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
