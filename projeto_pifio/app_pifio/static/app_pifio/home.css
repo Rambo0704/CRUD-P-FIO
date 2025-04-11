@@ -133,12 +133,3 @@ body {
   right: -20px;
   transition: 0.7s;
 }
-
-.uiverse-button-two:hover span {
-  padding-right: 3.55em;
-}
-
-.uiverse-button-two:hover span:after {
-  opacity: 1;
-  right: 0;
-}
